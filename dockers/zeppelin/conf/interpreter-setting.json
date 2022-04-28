@@ -22,7 +22,7 @@
       "spark.submit.deployMode": {
         "envName": "",
         "propertyName": "spark.submit.deployMode",
-        "defaultValue": "cluster",
+        "defaultValue": "client",
         "description": "The deploy mode of Spark driver program, either \"client\" or \"cluster\", Which means to launch driver program locally (\"client\") or remotely (\"cluster\") on one of the nodes inside the cluster.",
         "type": "string"
       },
@@ -96,10 +96,10 @@
         "description": "The caCertFile k8s cluster",
         "type": "string"
       },
-      "spark.kubernetes.authenticate.submission.oauthToken": {
+      "spark.kubernetes.authenticate.submission.oauthTokenFile": {
         "envName": null,
-        "propertyName": "spark.kubernetes.authenticate.submission.oauthToken",
-        "defaultValue": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImVjODVhU2VyMlBhSURDQmRHUXdodXBsUjFQdlhOWWU3STc4RUlRZGVKQjAifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InNwYXJrLXRva2VuLWYyaG5zIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InNwYXJrIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZDQ0MmJmNzktN2U5Yi00Nzk1LTgwMTQtM2IzYTJmMTU0OGEwIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmRlZmF1bHQ6c3BhcmsifQ.rFIMfcwh_M44wCBPd8bs5-3CNfZxrUJt00Z8qjl8k0RaarSNrDE8NSxoFgvDGM9J7apTcR4fGcSixlWCk_hp8npGrjEqMxWy42tl5LAlcfbMCir9LfPtTe9V6Kusglw_I-2KByBn5LQQf3ssW9yMxrNJDz-Jl8Lgsy40iruip_1NrwqHn_qEclNY3knPnsY8kXCAPwQwWqysRJIZsbpCWBTE0mLT1i-glozha-oAvePan_lmwXGzKrZ_5RJo6Y2jTmS95EtRo0wCi-9Qa7CMk-tIsPdQdV2uYYuJp80eMv9hIQdMgcNDSLNV3FpAfKhhEFKaXnz9vEEzqQkVz-s7nA",
+        "propertyName": "spark.kubernetes.authenticate.submission.oauthTokenFile",
+        "defaultValue": "/opt/zeppelin/spark/k8s_conf/spark_token",
         "description": "The oauthToken of k8s cluster",
         "type": "string"
       },

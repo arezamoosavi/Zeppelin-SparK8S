@@ -45,6 +45,7 @@ kind-cmd:
 	kind delete cluster
 	docker stop $(docker ps -aq)
 	docker rm $(docker ps -aq)
+	rm -rvf ~/.kube
 
 all-deploy:
 	kubectl apply -f deployment/
