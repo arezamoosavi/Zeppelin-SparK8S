@@ -127,7 +127,7 @@
       "zeppelin.spark.useHiveContext": {
         "envName": null,
         "propertyName": "zeppelin.spark.useHiveContext",
-        "defaultValue": true,
+        "defaultValue": false,
         "description": "Use HiveContext instead of SQLContext if it is true. Enable hive for SparkSession.",
         "type": "checkbox"
       },
@@ -155,7 +155,7 @@
       "zeppelin.spark.enableSupportedVersionCheck": {
         "envName": null,
         "propertyName": "zeppelin.spark.enableSupportedVersionCheck",
-        "defaultValue": true,
+        "defaultValue": false,
         "description": "Whether checking supported spark version. Developer only setting, not for production use",
         "type": "checkbox"
       },
