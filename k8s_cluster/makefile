@@ -33,9 +33,9 @@ docker-tag:
 	docker image prune --filter="dangling=true"
 
 	docker tag zeppelin-spark8s_zeppelin:latest 192.168.0.1:5000/zeppelin:latest
-	docker push 192.168.0.1:5000/zeppelin:latest
 
 docker-push:
+	docker push 192.168.0.1:5000/zeppelin:latest
 	docker push 192.168.0.1:5000/main-spark:latest
 
 check-registry:
@@ -103,4 +103,4 @@ run-spark:
 
 
 start-zepp:
-	kubectl port-forward zeppelin-server-5d7684fdd6-hs96p 8080:80
+	kubectl port-forward zeppelin-server 8080:80
